@@ -949,7 +949,7 @@ Webkit browsers do not support opening new Private windows programatically, thus
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2024.0</string>
+	<string>2024.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vitorgalvao/incognito-clone-workflow/</string>
 </dict>
