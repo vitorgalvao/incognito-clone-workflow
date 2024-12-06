@@ -301,24 +301,6 @@
 			<dict>
 				<key>tasksettings</key>
 				<dict>
-					<key>menubar_items</key>
-					<string>{var:webkit_private_menu}</string>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/macOS/app.current.click.menubar.item</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
-			<key>uid</key>
-			<string>5B47CE52-50FC-4AC1-878A-10E073036CBE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>tasksettings</key>
-				<dict>
 					<key>app_list</key>
 					<string>{var:browser_name}</string>
 				</dict>
@@ -337,18 +319,16 @@
 			<dict>
 				<key>tasksettings</key>
 				<dict>
-					<key>custom_browser</key>
-					<string>{var:browser_name}</string>
-					<key>popup_browser</key>
-					<string>custom</string>
+					<key>menubar_items</key>
+					<string>{var:webkit_private_menu}</string>
 				</dict>
 				<key>taskuid</key>
-				<string>com.alfredapp.automation.extras/web-browsers/webkit-browsers/webkit.tabs.current.close</string>
+				<string>com.alfredapp.automation.core/macOS/app.current.click.menubar.item</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>365BEC2F-D659-432F-B5A5-7DC4826258A0</string>
+			<string>5B47CE52-50FC-4AC1-878A-10E073036CBE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -371,6 +351,26 @@
 			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
 			<string>D6A08880-814C-4E76-AD83-4E1CF3A1A6EF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>custom_browser</key>
+					<string>{var:browser_name}</string>
+					<key>popup_browser</key>
+					<string>custom</string>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.extras/web-browsers/webkit-browsers/webkit.tabs.current.close</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>365BEC2F-D659-432F-B5A5-7DC4826258A0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -480,15 +480,20 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>tasksettings</key>
-				<dict/>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/macOS/app.current.browser</string>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>close_tab</key>
+					<string>false</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>06E5B89D-B505-47B9-8015-4A874A749121</string>
+			<string>972C5BD5-BBF1-47A0-A92D-5EC40578BA1E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -518,20 +523,15 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>close_tab</key>
-					<string>false</string>
-				</dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/macOS/app.current.browser</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
+			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>972C5BD5-BBF1-47A0-A92D-5EC40578BA1E</string>
+			<string>06E5B89D-B505-47B9-8015-4A874A749121</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -630,14 +630,16 @@
 					<string>{var:browser_name}</string>
 					<key>popup_browser</key>
 					<string>custom</string>
+					<key>private_window</key>
+					<true/>
 				</dict>
 				<key>taskuid</key>
-				<string>com.alfredapp.automation.extras/web-browsers/chromium-browsers/chromium.tabs.current.close</string>
+				<string>com.alfredapp.automation.extras/web-browsers/chromium-browsers/chromium.windows.new</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>FFD0F729-19F4-48A6-AD53-D06954A1E603</string>
+			<string>7D581C43-EA57-4A3D-AC2F-2A6866DCC87E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -652,12 +654,12 @@
 					<string>custom</string>
 				</dict>
 				<key>taskuid</key>
-				<string>com.alfredapp.automation.extras/web-browsers/chromium-browsers/chromium.windows.new</string>
+				<string>com.alfredapp.automation.extras/web-browsers/chromium-browsers/chromium.tabs.current.close</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>7D581C43-EA57-4A3D-AC2F-2A6866DCC87E</string>
+			<string>FFD0F729-19F4-48A6-AD53-D06954A1E603</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
